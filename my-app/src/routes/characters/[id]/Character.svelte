@@ -1,4 +1,13 @@
 <script>
+  
+/**
+* Represents a character component
+* @component Character
+* @param {Object} props - The Props for the Character component.
+* @param {string} name - the Name of the character.
+* @param {string} gender - The gender of the character
+* @param {string} voicedBy - The voice actor/actress of the character. 
+*/
     const UNKNOWN_IMAGE_URL = 'https://bobsburgers-api.herokuapp.com/images/characters/99.jpg';
   
     export let name = '';

@@ -1,7 +1,8 @@
 <script>
+    import Character from './Character.svelte'
     export let data;
 
-    let character;
+    // let character;
 
     // Log the value of DetailedCharacter to the console
     //console.log("here's the [id] data", data);
@@ -12,12 +13,12 @@
 </script>
 
 <svelte:head>
-    <title>{character.name}</title>
+    <title>{character.name} | Characters</title>
 </svelte:head>
 
-<h1>{character.name}</h1>
+<Character {...character} />
 
-<a href="/characters">Characters</a>
+<a href="/characters">Back</a>
 
 
 <style>
