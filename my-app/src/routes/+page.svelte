@@ -1,2 +1,18 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+let subject = 'Learners';
+    </script>
+
+<h1>Welcome SvelteKit {subject}</h1>
+
+<svelte:head>
+    <title>Home</title>
+</svelte:head>
+
+<a href="/about">About</a>
+<a href="/characters">Characters</a>
+
+<style>
+    h1 {
+        color: rebeccapurple;
+    }
+</style>
